@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 url='https://www.amazon.com/s?k=seller&crid=OZR43049XKSH&sprefix=seller%2Caps%2C1203&ref=nb_sb_noss_1'
 
-r=requests.get(url, verify=False)
+r=requests.get(url)
 
 pg=BeautifulSoup(r.text,'lxml')
 

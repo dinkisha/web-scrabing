@@ -4,8 +4,8 @@ import pandas as pd
 
 #Imports the HTML into python
 url = 'https://www.worldometers.info/world-population/'
-requests.get(url, verify=False)
-page = requests.get(url, verify=False)
+requests.get(url)
+page = requests.get(url)
 soup = BeautifulSoup(page.text, 'lxml')
 
 #Subsets the HTML to only get the HTML of our table needed

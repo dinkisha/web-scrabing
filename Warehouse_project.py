@@ -10,7 +10,7 @@ Created on Thu Mar 13 10:03:14 2025
 import requests
 from bs4 import BeautifulSoup
 urls='https://www.findawarehouse.org/SearchFAW'
-p1=requests.get(urls, verify=False)
+p1=requests.get(urls)
 s1=BeautifulSoup(p1.text,'lxml')
 name=s1.find_all( class_='fw-bold')[1:]
 

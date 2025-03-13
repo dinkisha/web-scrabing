@@ -10,9 +10,9 @@ from bs4 import BeautifulSoup
 
 url = 'https://webscraper.io/test-sites/e-commerce/allinone/phones/touch'
 
-requests.get(url, verify=False)
+requests.get(url)
 
-page=requests.get(url, verify=False)
+page=requests.get(url)
 
 soup=BeautifulSoup(page.text, 'lxml')
 
